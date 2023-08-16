@@ -57,7 +57,7 @@
       >
     </button>
     <nav
-      class="container-fluid navbar navbar-expand-lg navbar-dark bg-black  aparecer fixed-top"
+      class="container-fluid navbar navbar-expand-lg navbar-dark bg-black aparecer fixed-top"
       id="myNavbar"
     >
       <div class="container d-flex justify-content-around">
@@ -115,8 +115,7 @@
       <section
         class="container my-5 d-flex flex-column gap-5 about"
         id="about-us"
-      >
-        <!-- Inicio About Us Seccion -->
+      > 
         <div class="row">
           <article
             class="about__content col-sm-6 d-flex flex-column align-items-center justify-content-center px-5"
@@ -182,15 +181,19 @@
       </section>
       <!-- Fin About Us Seccion -->
       <!-- Inicio Construcion Seccion -->
-      <section class="container my-5 text-center" id="construction-design">
+      <section
+        class="container my-5 text-center d-none d-md-block"
+        id="construction-design"
+      >
         <article class="container position-absolute z-3 text-center">
           <h1 class="display-4 my-5 p-3 text-center" id="construction-title">
             Our constructions and designs
           </h1>
         </article>
+        <!-- Carouse -->
         <div
           id="carouselExampleCaptions"
-          class="carousel carousel-dark slide carousel-fade"
+          class="carousel carousel-dark slide carousel-fade d-none d-md-block"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
@@ -334,6 +337,59 @@
           </button>
         </div>
       </section>
+      <section class="d-md-none vh-100">
+        <div class="row">col</div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary d-md-none"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content vh-100">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Fin Construcion Seccion -->
       <!-- Inicio Team Seccion -->
       <!-- <section class="vh-100" id="team"></section> -->

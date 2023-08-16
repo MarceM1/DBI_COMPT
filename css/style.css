@@ -24,15 +24,15 @@ a {
 }
 header {
   background-position: center center;
-  background-image: url(../ASSETS/img/casa-moderna-ventanas-panoramicas-playa_Tam-Orig.jpg);
-  background-size: cover;
-  
+  background-image: url(../ASSETS/img/casa-moderna-ventanas-panoramicas-playa.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   max-width: 100vw;
   
 }
 
-/* header::before {
+header::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -58,7 +58,7 @@ header {
     rgb(250, 235, 215) 1%,
     rgba(232, 232, 237, 0) 5%
   );
-} */
+}
 
 .leng-buttom {
   width: 10vw !important;
