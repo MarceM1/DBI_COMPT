@@ -45,18 +45,19 @@
       </article>
     </header>
     <button
+      type="button"
       class="leng-buttom btn btn-outline-light d-none d-lg-block d-xl-block mb-5 fixed-bottom text-center"
       id="leng-button"
     >
       <a
         class="d-flex align-items-center justify-content-center"
-        href="./index.html"
+        href="./spanish.html"
         id="leng-link"
         >Inglés</a
       >
     </button>
     <nav
-      class="container-fluid navbar navbar-expand-lg navbar-dark bg-black  aparecer fixed-top"
+      class="container-fluid navbar navbar-expand-lg navbar-dark bg-black aparecer fixed-top"
       id="myNavbar"
     >
       <div class="container d-flex justify-content-around">
@@ -82,7 +83,7 @@
           <ul class="navbar-nav d-flex mx-5 align-items-center">
             <li class="nav-item d-flex align-items-center">
               <a
-                class="nav-link active text-center"
+                class="nav-link text-center"
                 aria-current="page"
                 href="#about-us"
                 >Nosotros</a
@@ -94,7 +95,7 @@
               >
             </li>
             <!-- <li class="nav-item">
-              <a class="nav-link text-center" href="#team">Equipo</a>
+              <a class="nav-link text-center" href="#team">Team</a>
             </li> -->
             <li class="nav-item">
               <a class="nav-link text-center" href="#contact-us">Contáctanos</a>
@@ -103,7 +104,7 @@
               <a class="nav-link text-center" href="#work-us">Postúlate</a>
             </li>
             <li class="nav-item d-lg-none d-xl-none d-xxl-none">
-              <a class="nav-link text-center" href="./index.html">Inglés</a>
+              <a class="nav-link text-center" href="./spanish.html">Inglés</a>
             </li>
           </ul>
         </div>
@@ -115,7 +116,6 @@
         class="container my-5 d-flex flex-column gap-5 about"
         id="about-us"
       >
-        <!-- Inicio About Us Seccion -->
         <div class="row">
           <article
             class="about__content col-sm-6 d-flex flex-column align-items-center justify-content-center px-5"
@@ -126,7 +126,7 @@
               comprometidos a hacer realidad tus sueños de tener una casa única
               y personalizada que refleje tu estilo de vida. Nos especializamos
               en proyectos residenciales pequeños, asegurando que cada proyecto
-              sea único y satisfaga las necesidades de nuestros clientes.
+              sea único y satisfaga las necesidades de nuestros clientes..
             </p>
           </article>
           <picture class="about__picture col-sm-6 px-5">
@@ -181,15 +181,20 @@
         </div>
       </section>
       <!-- Fin About Us Seccion -->
-      <section class="container my-5 text-center" id="construction-design">
+      <!-- Inicio Construcion Seccion -->
+      <section
+        class="container my-5 text-center d-none d-md-block"
+        id="construction-design"
+      >
         <article class="container position-absolute z-3 text-center">
           <h1 class="display-4 my-5 p-3 text-center" id="construction-title">
             Nuestras Construcciones y Diseños
           </h1>
         </article>
+        <!-- Carouse -->
         <div
           id="carouselExampleCaptions"
-          class="carousel carousel-dark slide carousel-fade"
+          class="carousel carousel-dark slide carousel-fade d-none d-md-block"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
@@ -228,12 +233,8 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="./ASSETS/img/lof.jpg"
-                class="d-block w-100"
-                alt="..."
-                id="carousel-img"
-              />
+              <img src="./ASSETS/img/lof.jpg" class="d-block w-100" alt="..." /
+              id="carousel-img">
               <div
                 class="carousel-caption d-none d-md-block"
                 id="carousel-caption"
@@ -324,7 +325,7 @@
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden">Anterior</span>
           </button>
           <button
             class="carousel-control-next fw-semibold"
@@ -333,14 +334,75 @@
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden">Siguiente</span>
           </button>
         </div>
       </section>
+      <!-- Construccion ONLY MOBILE Section -->
+      <section class=" d-md-none vh-100 d-flex align-items-end justify-content-end">
+        
+        <!-- Falta Agregar titulo seccion -->
+        
+
+        <img src="./ASSETS/img/Loft5.jpg" class="position-absolute z-1" alt="" />
+         <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-outline-light rounded-pill position-absolute z-3 text-white mx-2 my-2"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Nuestros Projectos
+        </button>
+      </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content vh-100">
+            <div class="modal-header bg-black ">
+              <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">
+                Lorem, ipsum dolor.
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body bg-body-secondary">...</div>
+            <div class="modal-footer bg-dark">
+              <button
+                type="button"
+                class="btn btn-outline-light text-white rounded-pill"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <a href="#contact-us">
+                
+              <button type="button" class="btn btn-outline-light text-white rounded-pill text-dark">
+                Contáctanos
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin Construcion Seccion -->
+      <!-- Inicio Team Seccion -->
       <!-- <section class="vh-100" id="team"></section> -->
+      <!-- Fin Team Seccion -->
       <!-- Inicio Contact Us Seccion -->
       <section class="contacto" id="contact-us">
-        <!-- Inicio Contact Us Seccion -->
         <!-- Contact Container -->
         <div class="contact-container col-md-12 mb-2">
           <!-- Form -->
@@ -362,7 +424,7 @@
                 type="email"
                 name="email"
                 id=""
-                placeholder="Ingresa tu Email..."
+                placeholder="Ingresa Tu Email..."
                 required
               />
               <textarea
@@ -370,7 +432,7 @@
                 id=""
                 cols="30"
                 rows="10"
-                placeholder="Escribe tu mensaje aquí..."
+                placeholder="Escribe Tu Mensaje Aquí..."
                 required
               ></textarea>
               <input
@@ -394,15 +456,15 @@
         </div>
       </section>
       <!-- Fin Contact Us Seccion -->
-      <section class="mt-5" id="work-us">
-        <article class="">
+      <section class="" id="work-us">
+        <article class="my-5">
           <div class="row my-5"></div>
           <div class="row my-5">
             <h1
               class="col-12 col-md-6 col-lg-4 display-4 text-center"
               id="work-title"
             >
-              Queres formar parte del equipo?
+            Queres formar parte del equipo?
             </h1>
           </div>
           <div class="row mx-1">
@@ -412,7 +474,7 @@
               class="col-12 col-md-6 col-lg-4 display-6 text-center"
               id="work-subtitle"
             >
-              En DBI siempre buscamos los mejores talentos
+            En DBI siempre buscamos los mejores talentos
             </h3>
           </div>
           <div class="row">
@@ -456,8 +518,8 @@
       <seccion class="d-flex align-items-center justify-content-center">
         <small class="text-center mb-2"
           >copyright&copy;
-          <a href="mailto:marcelomelogno1986@gmail.com">Marcelo Melogno</a> |
-          Diseño y Desarrollo Web. Julio 2023
+          <a href="https://marcelomelogno-webdevelopment.netlify.app/">Marcelo Melogno</a> |
+          Diseño y Desarrollo Web. July 2023
         </small>
       </seccion>
     </footer>
