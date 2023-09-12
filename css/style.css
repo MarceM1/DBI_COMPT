@@ -5,6 +5,11 @@
 * Browsers: last 4 version
 */
 
+ul, ol, li {
+  list-style: none;
+}
+
+
 html {
   overflow-x: hidden;
   width: 100vw !important;

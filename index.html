@@ -10,6 +10,8 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="./fontAwsome/css/font-awesome.min.css" />
     <!-- Bootstrap Icons -->
 
     <!-- Fonts Quicksand | Montserrat  Googlefonts -->
@@ -94,16 +96,16 @@
                 >Construction and Desing</a
               >
             </li>
-            <!-- <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link text-center" href="#team">Team</a>
-            </li> -->
+            </li>
             <li class="nav-item">
               <a class="nav-link text-center" href="#contact-us">Contact US</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-center" href="#work-us">Work at Us</a>
             </li>
-            <li class="nav-item d-lg-none d-xl-none d-xxl-none">
+            <li class="nav-item">
               <a class="nav-link text-center" href="./spanish.html">Spanish</a>
             </li>
           </ul>
@@ -182,7 +184,7 @@
       <!-- Fin About Us Seccion -->
       <!-- Inicio Construcion Seccion -->
       <section
-        class="container my-5 text-center d-none d-md-block"
+        class="container my-5 text-center d-none d-md-block pb-5"
         id="construction-design"
       >
         <article class="container position-absolute z-3 text-center">
@@ -338,12 +340,18 @@
         </div>
       </section>
       <!-- Construccion ONLY MOBILE Section -->
-      <section class=" d-md-none vh-100 d-flex  align-items-end justify-content-end">
-        
+      <section
+        class="d-md-none vh-100 d-flex align-items-end justify-content-end p-0 m-0 mb-5"
+        id="construction-design"
+      >
         <!-- Falta Agregar titulo seccion -->
 
-        <img src="./ASSETS/img/Loft5.jpg" class="position-absolute z-1" alt="" />
-         <!-- Button trigger modal -->
+        <img
+          src="./ASSETS/img/Loft5.jpg"
+          class="position-absolute z-1"
+          alt=""
+        />
+        <!-- Button trigger modal -->
         <button
           type="button"
           class="btn btn-outline-light rounded-pill position-absolute z-3 text-white mx-2 my-2"
@@ -364,7 +372,7 @@
       >
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content vh-100">
-            <div class="modal-header bg-black ">
+            <div class="modal-header bg-black">
               <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">
                 Lorem, ipsum dolor.
               </h1>
@@ -385,10 +393,12 @@
                 Close
               </button>
               <a href="#contact-us">
-                
-              <button type="button" class="btn btn-outline-light text-white rounded-pill text-dark">
-                Contact Us
-              </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-light text-white rounded-pill text-dark"
+                >
+                  Contact Us
+                </button>
               </a>
             </div>
           </div>
@@ -397,7 +407,198 @@
 
       <!-- Fin Construcion Seccion -->
       <!-- Inicio Team Seccion -->
-      <!-- <section class="vh-100" id="team"></section> -->
+      <section class="mt-5 pt-5" id="team">
+        <h3 class="display-3 mb-5 px-5">Our Team</h3>
+        <div class="row mt-5">
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex align-items-start justify-content-center"
+          >
+            <div class="card w-75 bg-dark text-white" style="width: 18rem">
+              <img src="./ASSETS/img/hombre-mostrando-planos-arquitectonicos-espacio-copia (1).jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Arquitecto Francisco Montealegre</h5>
+                <p class="card-text">
+                  Arquitecto con más de 12 años de experiencia en el diseño,
+                  supervisión y construcción de obras arquitectónicas y viales.
+                  Especializado en elaboración de Estudios de Impacto Vial,
+                  diseños viales y evaluación de eficiencia de elementos urbanos
+                  como aceras, dotación y diseño de estacionamientos, gestiones
+                  de tierra para realización de obras viales.
+                </p>
+                <p class="card-text">
+                  Experiencia en movilización de infraestructura eléctrica,
+                  drenajes, agua potable, colectores, redes de
+                  telecomunicaciones, para acondicionamiento de la vialidad.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li
+                class="list-group-item bg-dark text-white border-black border-opacity-10"
+              >
+                <a
+                  class="d-flex alig align-items-center justify-content-between fs-4 text-white "
+                  type=""
+                  data-bs-toggle="collapse"
+                  data-bs-target="#montealegreproyectos"
+                  aria-expanded="false"
+                  aria-controls="montealegreproyectos"
+                >
+                Proyectos Destacados
+                <i class="fa fa-chevron-circle-down fs-3 text-white" aria-hidden="true"></i>
+                </a>
+                <div class="collapse mt-3" id="montealegreproyectos">
+                  <p class="card-text">Estructurador y Gerente de proyecto Pasos a Desnivel y viaductos en Ciudad de Guatemala, Guatemala C.A.</p>
+                  <p class="card-text">Diseñador principal de diferentes proyectos habitaciones incluyendo Residencias en West End Roatán Honduras.  </p>
+                  <p class="card-text">Participó en el equipo de diseño de complejo Industrial que incluye oficinas, edificio de operaciones industriales y bodegas de almacenaje.</p>
+                  <p class="card-text">Diseñador principal de industria de transformación de madera, en la que se diseño una innovación en la estructuración de la estructura de madera en techos.</p>
+                  <p class="card-text">Revisor, estructurador y supervisor de proyectos escolares con cooperación internacional.</p>
+                </div>
+                </li>
+                <li
+                class="list-group-item bg-dark text-white border-black border-opacity-10"
+              >
+                <a
+                  class="d-flex alig align-items-center justify-content-between text-white fs-4"
+                  type=""
+                  data-bs-toggle="collapse"
+                  data-bs-target="#montealegrehabilidades"
+                  aria-expanded="false"
+                  aria-controls="montealegrehabilidades"
+                >
+                  Habilidades Destacadas
+                  <i class="fa fa-chevron-circle-down fs-3" aria-hidden="true"></i>
+                </a>
+                <div class="collapse mt-3" id="montealegrehabilidades">
+                  <p class="card-text">Experiencia en la gestión de proyectos de construcción de infraestructura vial de gran escala, desde el diseño hasta la finalización. ($10,000,000.00)</p>
+                  <p class="card-text">Conocimientos avanzados en software de diseño arquitectónico, incluyendo AutoCAD.</p>
+                  <p class="card-text">Experiencia en gestión y construcción de proyectos en el sector público.</p>
+                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex align-items-start justify-content-center"
+          >
+            <div class="card w-75 bg-dark text-white" style="width: 18rem">
+              <img src="./ASSETS/img/roja-entrega-determinado-stock-masculina.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Engineer Carlos Amaya</h5>
+                <p class="card-text">
+                  25 years experience in project commissioning and industrial automation for Automotive, pharmaceutical, petrochemical and renewable energy. Avid sailor.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li
+                class="list-group-item bg-dark text-white border-black border-opacity-10"
+              >
+                <a
+                  class="d-flex alig align-items-center justify-content-between fs-4 text-white "
+                  type=""
+                  data-bs-toggle="collapse"
+                  data-bs-target="#montealegreproyectos"
+                  aria-expanded="false"
+                  aria-controls="montealegreproyectos"
+                >
+                Industry First’s
+                <i class="fa fa-chevron-circle-down fs-3 text-white" aria-hidden="true"></i>
+                </a>
+                <div class="collapse mt-3" id="montealegreproyectos">
+                  <p class="card-text">Team of Commissioning Engineers in $8 Billion innovative Oilsands project in Northern Alberta, Canada 2015</p>
+                  <p class="card-text">Nd:YAG LASER Welding System</p>
+                  <p class="card-text"> CPV Solar panel robotic assembly of optics</p>
+                </div>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex align-items-start justify-content-center"
+          >
+            <div class="card w-75 bg-dark text-white" style="width: 18rem">
+              <img src="./ASSETS/img/mujer-sosteniendo-planos.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ingeniera Civil Ana Maria Varela</h5>
+                <p class="card-text">
+                  Ingeniera civil con siete años de experiencia en la industria de la construcción y diseño. Durante este tiempo, he desarrollado habilidades clave y conocimientos especializados en diversas áreas del sector civil.
+                </p>
+                <p class="card-text">
+                  Se destaca por su compromiso con la calidad, seguridad y sostenibilidad. Con un enfoque proactivo y una habilidad innata para trabajar en equipos multidisciplinarios, ha demostrado ser una valiosa líder y colaboradora en todos los proyectos en los que se ha involucrado. Su formación y experiencia la posicionan como una profesional de alto calibre en el ámbito de la ingeniería civil.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li
+                class="list-group-item bg-dark text-white border-black border-opacity-10"
+              >
+                <a
+                  class="d-flex alig align-items-center justify-content-between fs-4 text-white "
+                  type=""
+                  data-bs-toggle="collapse"
+                  data-bs-target="#amaya1"
+                  aria-expanded="false"
+                  aria-controls="amaya1"
+                >
+                Sector Civil
+                <i class="fa fa-chevron-circle-down fs-3 text-white" aria-hidden="true"></i>
+                </a>
+                <div class="collapse mt-3" id="amaya1">
+                  <p class="card-text">Construcción y Diseño Carretero: Encargada de proyectos que abarcan desde pequeñas vías locales hasta grandes carreteras interurbanas, asegurando la calidad y eficiencia de las construcciones.</p>
+                  <p class="card-text">Señalización: Implementación y diseño de sistemas de señalización vial, garantizando la seguridad y fluidez del tráfico en todas las obras realizadas.</p>
+                  <p class="card-text">Participó en el equipo de diseño de complejo Industrial que incluye oficinas, edificio de operaciones industriales y bodegas de almacenaje.</p>
+                  <p class="card-text">Sistemas de Residuos Sólidos: Diseño e implementación de sistemas eficientes y sostenibles para la gestión y tratamiento de residuos.</p>
+                  <p class="card-text">Revisor, estructurador y supervisor de proyectos escolares con cooperación internacional.</p>
+                </div>
+                </li>
+                <li
+                class="list-group-item bg-dark text-white border-black border-opacity-10"
+              >
+                <a
+                  class="d-flex alig align-items-center justify-content-between text-white fs-4"
+                  type=""
+                  data-bs-toggle="collapse"
+                  data-bs-target="#amaya2"
+                  aria-expanded="false"
+                  aria-controls="amaya2"
+                >
+                Formulación de Proyectos Diversos
+                  <i class="fa fa-chevron-circle-down fs-3" aria-hidden="true"></i>
+                </a>
+                <div class="collapse mt-3" id="amaya2">
+                  <p class="card-text">Puentes, garantizando la seguridad y longevidad de las estructuras.</p>
+                  <p class="card-text">Escuelas, creando espacios educativos funcionales y seguros.
+                    .</p>
+                  <p class="card-text">Alcantarillas, vados y sistemas de drenaje.</p>
+                  <p class="card-text">Pavimentaciones, mejorando la infraestructura vial de diversas áreas.</p>
+                  <p class="card-text">Centros de salud, construyendo instalaciones médicas modernas y eficientes.</p>
+                  <p class="card-text">Proyectos de electrificación.</p>
+                  <p class="card-text">Sistemas completos de agua potable, garantizando acceso a recursos vitales.</p>
+                </div>
+                </li>
+                <li
+                class="list-group-item bg-dark text-white border-black border-opacity-10"
+              >
+                <a
+                  class="d-flex alig align-items-center justify-content-between text-white fs-4"
+                  type=""
+                  data-bs-toggle="collapse"
+                  data-bs-target="#amaya3"
+                  aria-expanded="false"
+                  aria-controls="amaya3"
+                >
+                Experiencia Internacional de Alta Calidad
+                  <i class="fa fa-chevron-circle-down fs-3" aria-hidden="true"></i>
+                </a>
+                <div class="collapse mt-3" id="amaya3">
+                  <p class="card-text">Tuvo el privilegio de formar parte de un equipo seleccionado para trabajar en proyectos encargados por el Cuerpo de Ingenieros del Ejército de los Estados Unidos (USA Army Corps of Engineers).</p>
+                  <p class="card-text">Durante esta asignación, contribuyó a la construcción de infraestructuras críticas bajo estándares y requisitos extremadamente rigurosos, demostrando no solo su capacidad técnica, sino también su adaptabilidad y habilidades de trabajo en equipo en un escenario internacional.</p>
+                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Fin Team Seccion -->
       <!-- Inicio Contact Us Seccion -->
       <section class="contacto" id="contact-us">
@@ -516,8 +717,12 @@
       <seccion class="d-flex align-items-center justify-content-center">
         <small class="text-center mb-2"
           >copyright&copy;
-          <a href="https://marcelomelogno-webdevelopment.netlify.app/" target="_blank">Marcelo Melogno</a> |
-          Desing & Web Development. July 2023
+          <a
+            href="https://marcelomelogno-webdevelopment.netlify.app/"
+            target="_blank"
+            >Marcelo Melogno</a
+          >
+          | Desing & Web Development. July 2023
         </small>
       </seccion>
     </footer>
